@@ -39,13 +39,23 @@ body {
     padding: 0px 160px;
 }
 
+/* Title Text Common Property ================================================>*/
+.title {
+    font-size: var(--section-title-font-size);
+    font-weight: var(--section-title-font-weight);
+    color: var(--section-title-font-color);
+    margin-bottom: 32px;
+    margin-top: 80px;
+}
+
 /* Common Section Dicleration End Now Main Design Start=====================================================================================> */
 
 
 /* Navigation Menu Design Start==============================================> */
-nav{
+nav {
     margin: 24px auto;
 }
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -68,6 +78,7 @@ nav ul li button a {
     font-weight: 600;
     color: rgb(0, 106, 80);
 }
+
 nav ul li button {
     padding: 15px 30px;
     border-radius: var(--button-border-radious);
@@ -77,7 +88,7 @@ nav ul li button {
 
 /* banner Section Design Start================================================> */
 
-.banner_section{
+.banner_section {
     background-color: var(--card_2-background);
     padding: 80px 60px;
     border-radius: 24px;
@@ -86,33 +97,244 @@ nav ul li button {
     align-items: center;
 }
 
-.banner_section .banner_content h3{
+.banner_section .banner_content h3 {
 
     color: rgba(14, 14, 14, 0.5);
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 16px;
-    
+
 }
-.banner_section .banner_content h1{
+
+.banner_section .banner_content h1 {
 
     color: var(--section-title-font-color);
     font-weight: 700;
     font-size: 56px;
     margin-bottom: 24px;
-    
+
 }
-.banner_section .banner_content button{
-   
+
+.banner_section .banner_content button {
+
     padding: 17px 34px;
     font-size: var(--button-font-size);
     background-color: var(--button-background-color);
     border-radius: var(--button-border-radious);
     border: none;
 }
-.banner_section .banner_content button a{
-   
+
+.banner_section .banner_content button a {
+
     text-decoration: none;
     color: var(--button-text-color);
-   
+
+}
+
+/* Pillar Section Design Start=========================================================> */
+
+.card_section {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-direction: row;
+
+}
+
+.card {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 24px;
+}
+
+.card img {
+    margin-bottom: 24px;
+}
+
+.card h4 {
+    color: var(--card-title-color);
+    font-size: var(--card-title-font-size);
+    font-weight: var(--card-title-font-weight);
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--card-description-font-color);
+    font-size: var(--card-description-font-size);
+    font-weight: var(--card-description-font-weight);
+    line-height: 24px;
+}
+
+/* Future Section Design Start============================================================> */
+
+.future_card {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.future_section p {
+    margin-bottom: 32px;
+    font-weight: var(--card-description-font-weight);
+    font-size: var(--card-description-font-size);
+    color: var(--card-description-font-color);
+    line-height: 24px;
+}
+
+.v-card {
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 32px;
+}
+
+.v-card p {
+    font-size: var(--card-description-font-size);
+    font-weight: var(--card-description-font-weight);
+    color: var(--card-description-font-color);
+    line-height: 24px;
+}
+
+.v-card h4 {
+    margin-top: 34px;
+    margin-bottom: 12px;
+    font-size: var(--card-title-font-size);
+    font-weight: var(--card-title-font-weight);
+    color: var(--card-title-color);
+}
+
+.card_1 {
+    background: var(--card_1-background);
+}
+
+.card_2 {
+    background: var(--card_2-background);
+}
+
+.card_3 {
+    background: var(--card_3-background);
+}
+
+.v-card>button>a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--button-text-color);
+}
+
+.v-card>button {
+    padding: 11px 20px;
+    border-radius: var(--button-border-radious);
+    border: none;
+}
+
+.v-card .bt-1 {
+    background-color: var(--card_1-button-background-color);
+}
+
+.v-card .bt-2 {
+    background-color: var(--card_2-button-background-color);
+}
+
+.v-card .bt-3 {
+    background-color: var(--card_3-button-background-color);
+}
+
+/* Doctor Yunus Section Description Section Design Start=========================================================> */
+.yunus_section {
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: var(--card-border-radius);
+    background: var(--button-text-color);
+    margin-top: 32px;
+    margin-bottom: 80px;
+    background-image: url(assets/quote-bg.png);
+    background-position: 32px 32px;
+    background-repeat: no-repeat;
+}
+
+.yunus_section p {
+    color: var(--card-title-color);
+    font-size: var(--card-description-font-size);
+    font-weight: var(--card-description-font-weight);
+    line-height: 24px;
+}
+
+
+
+.yunus_section h2 {
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+/* Feedback Section Design Start============================================================> */
+
+.opinion_section {
+    padding: 32px;
+    background-color: var(--button-text-color);
+    border-radius: 16px;
+    margin-top: 32px;
+}
+
+
+.opinion_section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--button-text-color);
+
+}
+
+.opinion_section table th,
+.opinion_section table td {
+    padding: 16px;
+    text-align: left;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.opinion_section table td:nth-child(1) {
+    width: 85%;
+}
+
+.opinion_section table td:nth-child(2) {
+    width: 15%;
+}
+
+.opinion_section table th {
+    background-color: var(--card_2-background);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.opinion_section table th:nth-child(1) {
+
+    border-right: none;  
+
+}
+
+.opinion_section table th:nth-child(2) {
+
+    text-align: right;
+    border-left: none;  
+
+}
+
+
+.opinion_section select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 4px;
+    background-color: var(--card_2-background);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.opinion_section select option{
+    
 }
