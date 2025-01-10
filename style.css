@@ -313,14 +313,14 @@ nav ul li button {
 
 .opinion_section table th:nth-child(1) {
 
-    border-right: none;  
+    border-right: none;
 
 }
 
 .opinion_section table th:nth-child(2) {
 
     text-align: right;
-    border-left: none;  
+    border-left: none;
 
 }
 
@@ -335,6 +335,74 @@ nav ul li button {
     font-weight: 500;
 }
 
-.opinion_section select option{
-    
+
+/* Recente News Section Design start===========================================================================> */
+.recent_news p {
+    color: var(--card-description-font-color);
+    font-size: var(--card-description-font-size);
+    font-weight: var(--card-description-font-weight);
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+/* News Card Section Design Start=============================================================================> */
+
+.news_section .box {
+    padding: 48px;
+    background-color: var(--button-text-color);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+}
+
+.box .content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.box .content .time{
+    color: var(--card-description-font-color);
+    font-weight: var(--card-description-font-weight);
+    font-size: var(--card-description-font-size);
+    line-height: 24px;
+    margin: 12px auto;
+}
+
+
+.box .content .desc {
+    color: var(--card-description-font-color);
+    font-weight: var(--card-description-font-weight);
+    font-size: var(--card-description-font-size);
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+.box .content img {
+    margin: 12px auto;
+}
+
+.news_section .box .picture img {
+    border-radius: var(--card-border-radius);
+
+}
+
+.box button a{
+    text-decoration: none;
+    font-size: var(--button-font-size);
+    color: var(--button-text-color);
+    font-weight: 600;
+}
+
+.box button{
+    padding: 13px 26px;
+    background-color: var(--button-background-color);
+    border-radius: var(--button-border-radious);
+    border: none;
+}
+
+.news_card2{
+    flex-direction: row-reverse;
 }
