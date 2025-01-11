@@ -706,3 +706,7 @@ footer ul li img:nth-child(3):hover{
     text-decoration: underline;
 }
 
+::selection{
+    background-color: var(--card_2-background);
+}
+
