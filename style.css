@@ -34,9 +34,19 @@
 
 body {
     font-family: "Fira Sans", serif;
+
+
+}
+
+header,
+main {
     max-width: 100vw;
     background-color: var(--body_background-color);
     padding: 0px 160px;
+}
+
+main {
+    padding-bottom: 80px;
 }
 
 /* Title Text Common Property ================================================>*/
@@ -45,7 +55,7 @@ body {
     font-weight: var(--section-title-font-weight);
     color: var(--section-title-font-color);
     margin-bottom: 32px;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 /* Common Section Dicleration End Now Main Design Start=====================================================================================> */
@@ -53,7 +63,8 @@ body {
 
 /* Navigation Menu Design Start==============================================> */
 nav {
-    margin: 24px auto;
+    margin: 0 auto;
+    padding: 24px 0px;
 }
 
 nav ul {
@@ -134,7 +145,6 @@ nav ul li button {
 /* Pillar Section Design Start=========================================================> */
 
 .card_section {
-
     display: flex;
     justify-content: space-between;
     gap: 24px;
@@ -466,59 +476,61 @@ nav ul li button {
     border-bottom: 1px solid rgba(14, 14, 14, 0.15);
 }
 
-.dontate_section button{
+.dontate_section button {
     display: block;
     margin: 0 auto;
     background-color: var(--button-background-color);
     border-radius: var(--button-border-radious);
     border: none;
 }
-.dontate_section button a{
+
+.dontate_section button a {
     display: inline-block;
     text-decoration: none;
     color: var(--button-text-color);
     font-size: var(--button-font-size);
     font-weight: 600;
     padding: 17px 34px;
-   
+
 }
 
 /* Newsletter Section Design Start==============================================================> */
 
-.newsletter_section{
-    margin: 80px 0px;
+.newsletter_section {
+    margin-top: 80px;
     background-color: var(--card_2-background);
     padding: 80px 100px;
     border-radius: var(--card-border-radius);
 }
 
-.newsletter_section h3{
+.newsletter_section h3 {
     font-size: var(--section-title-font-size);
     font-weight: var(--section-title-font-weight);
     color: var(--section-title-font-color);
     text-align: center;
 }
-.newsletter_section p{
+
+.newsletter_section p {
     text-align: center;
     color: var(--card-description-font-color);
     font-weight: var(--card-description-font-weight);
     font-size: var(--card-description-font-size);
     line-height: 24px;
     text-align: center;
-    margin: 16px;
+    margin: 24px;
 }
 
-.newsletter_section .get_email{
+.newsletter_section .get_email {
     width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.newsletter_section .get_email input[type="text"]{
-   
+.newsletter_section .get_email input[type="text"] {
+
     width: 50%;
     padding: 18px 40px;
     color: rgba(14, 14, 14, 0.3);
@@ -529,8 +541,9 @@ nav ul li button {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-.newsletter_section .get_email input[type="button"]{
-   
+
+.newsletter_section .get_email input[type="button"] {
+
     width: 15%;
     padding: 17px 34px;
     color: var(--button-text-color);
@@ -542,3 +555,54 @@ nav ul li button {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+/* Footer Section Design start=================================================> */
+
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 50px 150px;
+}
+
+footer h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+footer hr {
+    margin: 0px 80px;
+    stroke: rgba(14, 14, 14, 0.1);
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    padding-top: 32px;
+    padding-bottom: 50px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+/* All Design Complete ================================================================================================================> */
+/* All Design Complete ================================================================================================================> */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--button-background-color);
+    border-radius: 5px;
+}
+
+
+/*  Now Adding Hover Effect on Element */
