@@ -450,15 +450,18 @@ nav ul li button {
 
 .amount_card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 32px 105px;
+    gap: 32px;
 }
 
 .amount_card .amount {
+    width: 25%;
     padding: 40px;
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 16px;
     background: rgb(255, 255, 255);
+    text-align: center;
 }
 
 .amount_card .amount h4 {
@@ -472,12 +475,15 @@ nav ul li button {
 }
 
 .dontate_section .get_amount {
-    margin: 0px 124px 32px;
+    margin: 0px 115px;
+    text-align: center;
+    margin-bottom: 32px;
+
 }
 
 .dontate_section .get_amount input {
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 24px;
     text-align: center;
     border: none;
     outline: none;
